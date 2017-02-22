@@ -47,6 +47,9 @@ public class ProgrammingCourse implements Course {
     }
 
     public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.isEmpty()) {
+            this.prerequisites = "None";
+        }
         this.prerequisites = prerequisites;
     }
 

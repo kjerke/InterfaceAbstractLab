@@ -16,8 +16,8 @@ public class EnglishCourse implements Course {
     private String prerequisites;
 
     public EnglishCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+        setCourseName(courseName);
+        setCourseNumber(courseNumber);
     }
 
     public String getCourseNumber() {
@@ -47,6 +47,9 @@ public class EnglishCourse implements Course {
     }
 
     public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.isEmpty()) {
+            this.prerequisites = "None";
+        }
         this.prerequisites = prerequisites;
     }
 
