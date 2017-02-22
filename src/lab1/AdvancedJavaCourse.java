@@ -9,9 +9,6 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class AdvancedJavaCourse extends ProgrammingCourses {
-    String courseName;
-    private String courseNumber;
-    private double credits;
     private String prerequisites;
     private String REQUIRED_MSG = " Are Required";
 
